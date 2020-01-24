@@ -1,1 +1,36 @@
 // Navigation Styles here
+.outer-nav-container {
+    width: 100%;
+    border-bottom: dashed 2px @navigation-border;
+    .nav-container {
+        .flex(space-between, center);
+        width: 800px;
+        padding: 2% 0 1%;
+        margin: 0 auto;
+        @media @mobile {
+            flex-direction: column;
+            width: 100%;
+        }
+        .site-name-container {
+            width: 40%;
+            @media @mobile {
+                .flex(center, center);
+                width: 100%;
+            }
+        }
+        .links {
+            .flex(space-evenly, center);
+            width: 40%;
+            @media @mobile {
+                .flex(space-evenly, center);
+                width: 100%;
+            }
+            a {
+                color: black;
+                padding: 4% 0 0;
+                text-decoration: none;
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
